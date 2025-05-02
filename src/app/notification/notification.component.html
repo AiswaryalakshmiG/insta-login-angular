@@ -1,0 +1,14 @@
+<h2>Notifications</h2>
+<div *ngIf="notifications && notifications.length > 0; else noNotifications">
+    <ul>
+        <li *ngFor="let notification of notifications">
+            {{ notification.message }}
+        </li>
+    </ul>
+</div>
+<ng-template #noNotifications>
+    <p>No new notifications yet!</p>
+</ng-template>
+<div class="navbar">
+    <a routerLink="/homepage" class="home">Back to Homepage</a>
+</div>

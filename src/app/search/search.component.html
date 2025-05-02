@@ -1,0 +1,13 @@
+<div class="chat">
+    <p>Search to Chat</p>
+  
+    <div class="search">
+      <input type="text" [(ngModel)]="friendName" placeholder="Enter username">
+      <button appHighlight (click)="searchFriend()">Search</button>
+    </div>
+  
+    <div class="navbar">
+      <a routerLink="/homepage" class="home">Back to Homepage</a>
+    </div>
+  
+  </div>

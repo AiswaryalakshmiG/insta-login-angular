@@ -1,0 +1,19 @@
+git rm --cached instagram-app<body>
+    <div *ngIf="selectedFriend">
+      <h4>Chat with {{ selectedFriend }}</h4>
+      <img [src]="friendImage" [alt]="selectedFriend" width="40" height="40">
+      <br>
+    
+      <textarea [(ngModel)]="message" rows="3" cols="30" placeholder="Type your message here...">
+      </textarea>
+      <br>
+    
+      <button appHighlight class="btn" (click)="sendMessage()">Send</button>
+      <div *ngIf="messages.length > 0">
+        <h5>Chats:</h5>
+        <ul>
+          <li *ngFor="let msg of messages">{{ msg }}</li>
+        </ul>
+      </div>
+    </div>
+    </body>

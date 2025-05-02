@@ -1,0 +1,19 @@
+<body>
+    <div class="friend">
+      <h2>Friends</h2>
+      <div *ngFor="let friend of friends" (click)="selectFriend(friend)" class="frd">
+        <img [src]="friend.image" [alt]="friend.name" width="50" height="50" />
+        <span>{{ friend.name }}</span>
+      </div>
+      <div class="navbar">
+        <a routerLink="/homepage" class="home">Back to Homepage</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/search" class="search">Search</a>
+      </div>
+    </div>
+  
+    <app-chat class="chat" *ngIf="selectedFriend" [selectedFriend]="selectedFriend" [friendImage]="friendImage">
+    </app-chat>
+  
+  
+  </body>

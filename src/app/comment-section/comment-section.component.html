@@ -1,0 +1,22 @@
+<div class="comments">
+    <input type="text" [(ngModel)]="newComment" placeholder="Add a comment..." class="inputs">
+    <button  (click)="addComment()">
+      <i class="fa-solid fa-paper-plane"></i> Send
+    </button>
+  </div>
+  <div class="scroll">
+  <ul>
+    <li *ngFor="let comment of comments; let i = index">
+      {{ comment }}
+      <button  class="delete-btn" (click)="deleteComment(i)">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+    </li>
+  </ul>
+  <p *ngIf="comments.length === 0">No comments yet!</p>
+  </div>
+  
+  
+  
+  
+  

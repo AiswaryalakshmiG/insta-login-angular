@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.profile {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 10px;
+    font-family: Cursive, "Lucida Console", "Courier New", monospace;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.user {
+    width: 320px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.user img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ddd;
+}
+
+.user img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.button {
+    background-color: #286699;
+    color: white;
+    width: 50%;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* .button:hover {
+    background-color: rgb(16, 59, 99);
+    transform: scale(1.05);
+} */
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.navbar {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+}
+
+.home {
+    color: rgb(26, 75, 139);
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+}

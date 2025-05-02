@@ -1,0 +1,41 @@
+h2 {
+    text-align: center;
+    color: #427cac;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  li:hover {
+    background-color: #e6f7ff;
+  }
+  
+  p {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .navbar {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .home {
+    color: rgb(26, 75, 139);
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+  }

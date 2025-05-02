@@ -1,0 +1,28 @@
+<body>
+    <div class="login">
+      <h1 class="heading1">Instagram</h1>
+      <form (ngSubmit)="login()" #loginForm="ngForm">
+        <input type="text" name="username" [(ngModel)]="username" placeholder="username"
+          required>
+        <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required>
+        <button  appHighlight type="submit" class="button">Log In</button>
+      </form>
+  
+      <div class="seperator">
+        <hr>
+        <span>OR</span>
+        <hr>
+      </div>
+  
+      <div class="facebook">
+        <img src="assets/facebook.png" alt="facebook logo" />
+        <a href="https://www.facebook.com/login/"><span>Log in with Facebook</span></a>
+      </div>
+  
+      <a (click)="forgot()" class="forgot">Forgot Password?</a>
+    </div>
+  
+    <div class="signup">
+      <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
+    </div>
+  </body>
