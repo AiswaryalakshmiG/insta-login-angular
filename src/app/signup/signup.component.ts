@@ -16,8 +16,6 @@ export class SignupComponent {
   personalInfo: FormGroup;
   bio: FormGroup;
   isLinear=true;
-  hide = true;
-
 
 
   constructor(private form: FormBuilder, private router: Router,private userService: UserService

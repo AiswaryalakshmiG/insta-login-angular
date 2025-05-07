@@ -22,12 +22,6 @@ export class HomepageComponent {
       this.comments = JSON.parse(savedComments);
     }
   }
-// {
-//   const likes= localStorage.getItem('likeCount');
-//   if (likes){
-//     this.likeCount=JSON.parse(likes);
-//   }
-// }
 
 getlikeCount(): any[] {
   return JSON.parse(localStorage.getItem(this.storeData) || '[]');

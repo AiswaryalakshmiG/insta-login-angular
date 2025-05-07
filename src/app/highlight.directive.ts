@@ -5,9 +5,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 })
 export class HighlightDirective {
 
-  constructor(private el: ElementRef) {
-    this.el.nativeElement.style.transition = 'all 0.1s ease';
-  }
+  constructor(private el: ElementRef) {}
 
   @HostListener('mouseenter') onMouseEnter() {  
     this.el.nativeElement.style.backgroundColor = '#1c4e7b';

@@ -3,7 +3,7 @@ body {
     background-color: white;
     justify-content: center;
     min-height: 100vh;
-    margin: 0px;
+    margin-top: 10%;
     padding: 10px;
     box-sizing: border-box;
   }

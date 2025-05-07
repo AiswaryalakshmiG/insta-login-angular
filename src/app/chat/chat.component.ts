@@ -25,7 +25,6 @@ export class ChatComponent implements OnChanges {
     if (this.selectedFriend && this.message.trim()) {
       this.messages.push(this.message);
       this.shareService.addMessage(this.selectedFriend, this.message); 
-      this.messages = this.shareService.getMessages(this.selectedFriend);
       this.message = '';
     } else {
       alert('Please type a message before sending.');

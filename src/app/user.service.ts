@@ -16,16 +16,7 @@ export class UserService {
     localStorage.setItem(this.storeData, JSON.stringify(users));
   }
 
-  findUser(email: string, password: string): any {
-    const users = this.getUsers();
-    return users.find(
-      (user: any) => user.email === email && user.password === password
-    );
-  }
-
   forgot(email: string): any {
     return this.getUsers().find((user: any) => user.email === email);
   }
 }
-
-
