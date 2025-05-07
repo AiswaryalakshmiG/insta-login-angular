@@ -14,9 +14,7 @@ export class HomepageComponent {
   private storeData = 'likeCount';
 
 
-  constructor(private router: Router,
-  
-    ) {
+  constructor(private router: Router,) {
     const savedComments = localStorage.getItem('comments');
     if (savedComments) {
       this.comments = JSON.parse(savedComments);
